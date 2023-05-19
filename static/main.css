@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/night-sky-colorful-beautiful-clouds-mountain-valley-digital-art-4k-wallpaper-uhdpaper.com-608@1@k.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.mensaje {
+    background-color: bisque;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.comentarios {
+    background-color: #ffffff7c;
+    color: #000;
+    width: 500px;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.containerComentario {
+    padding: 10px;
+    margin: 20px;
+    font-size: 18px;
+    border-bottom:  solid 0.5px #d6d6d6e5;
+}
+
+.comment{
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+.create-comment{
+    background-color: #ffffff7c;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+.create-comment h1{
+    text-align: center;
+    margin: 40px;
+}
+
+.create-comment form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.create-comment form input{
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    font-size: 18px;
+    outline: none;
+    background-color: #ffffff91;
+    border: none;
+    border-radius: 8px;
+}
+
+.container-c{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.area{
+    background-color: #ffffff91;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.video{
+    width: 500px;
+    height: 400px;
+    outline: none;
+}

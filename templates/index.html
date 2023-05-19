@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'main.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios con python</title>
+</head>
+<body>
+<div class="container-c">
+    <div class="comentarios">
+        <h1>Comentarios</h1>
+        {% for dato in dato %}
+        <div class="containerComentario">
+            <p>{{dato[1]}}-{{dato[2]}}</p>
+            <div class="comment">
+                {{dato[3]}}
+            </div>
+            <a href="/delete/{{dato.0}}">Eliminar</a>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="create-comment">
+        <h1>Comenta algo</h1>
+        <form action="/comentar" method="post">
+            <input type="text" placeholder="Nombre" name="nombre">
+            <input type="correo" placeholder="Correo" name="correo">
+            <textarea name="comentariousuario" id="c" placeholder="comentario" cols="50" rows="10" style="width: 403px; height: 167px;" class="area"></textarea>
+            <input type="submit" value="Comentar">
+        </form>
+    </div>
+</div>
+</body>
+</html>
